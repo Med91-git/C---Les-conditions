@@ -1,0 +1,28 @@
+
+            Console.Write("Entrez un nombre minimum : ");
+            string valeurMinimum = Console.ReadLine();
+
+            int valeurMinimumInt = int.Parse(valeurMinimum);
+
+            Console.Write("Entrez un nombre maximum : ");
+            string valeurMaximum = Console.ReadLine();
+
+            int valeurMaximumInt = int.Parse(valeurMaximum);
+
+            Console.Write("Entrez une valeur : ");
+            string valeurfinale = Console.ReadLine();
+
+            int valeurfinaleInt = int.Parse(valeurfinale); 
+
+            if (valeurfinaleInt < valeurMinimumInt) 
+            {
+                Console.WriteLine("Vous êtes inférieur au minimum");
+            }
+            else if (valeurfinaleInt > valeurMaximumInt)
+            {
+                Console.WriteLine("Vous êtes supérieur au maximum");
+            }
+            else
+            {
+                Console.WriteLine("Valeur correcte ! Vous êtes entre le minimum et le maximum"); 
+            }
